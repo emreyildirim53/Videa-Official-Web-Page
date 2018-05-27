@@ -3,23 +3,29 @@
 	width: 100%;
 }
 .navbar{
-	background-color: #23415c;
+	background-color: #fff;
 	padding: 1% 0;
 	font-size: 1.2em;
 }
 .navbar-brand{
 	min-height: 55px;
-	padding: 0 15px 5px 40px;
+	padding:0 5px 5px 40px;
 }
+
+.navbar-brand img{
+	width: 150px;
+}
+
 .navbar-default{
 	padding-right: 40px;
 }
+
 .navbar-default .navbar-nav li a{
-	color:#d5d5d5;
+	color:#000;
 }
 
 .navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a.active{
-	color:#fff;
+	color:#fa4729;
 }
 
 #home{
@@ -34,12 +40,43 @@
 .landing-text{
 	display: table-cell;
 	text-align: center;
-	vertical-align:middle; 
+	vertical-align:middle;
+	outline: none;
 }
 
 .landing-text h1{
 	font-size: 500%;
 	font-weight: 700;
+}
+
+.landing-text a{
+	margin-top:5%;
+	margin-left:1%;
+	width: 150px;
+	color:#fff;
+	border:solid #1db954;
+	background-color: #1db954;
+	outline: none;
+}
+
+#login{
+	border:solid #fa4729;
+	background-color: #fa4729;
+}
+
+.landing-text a:hover{
+	color:#000;
+	border:solid #1db954;
+	background-color: #1db954;
+}
+.landing-text a:focus{
+	color:#fff;
+	border:solid #1db954;
+	background-color: #1db954;
+}
+
+.landing-text h3{
+	line-height: 35px;
 }
 
 .padding{
@@ -93,6 +130,12 @@ footer{
   .icon{
   	padding-top:5%;
   	max-width: 100px;
+  }
+  .navbar-brand{
+	padding-left: 10px;
+  }
+  .navbar-default{
+	padding-right: 10px;
   }
 }
 
