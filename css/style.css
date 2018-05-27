@@ -6,6 +6,10 @@
     font-family: fontRegularHeader;
     src: url('../fonts/Baloo-Regular.ttf');
 }
+@font-face {
+    font-family: Material Icons;
+    src: url('../fonts/MaterialIcons-Regular.woff2');
+}
 @media (max-width: 768px){
   	.landing-text h1{
    		font-size:300%;
@@ -30,8 +34,9 @@ html,body{
 }
 .navbar{
 	background-color: #fff;
-	padding: 1% 0;
+	padding: 0.2% 0;
 	font-size: 1.2em;
+	opacity: 0.96;
 }
 .navbar-brand{
 	min-height: 55px;
@@ -43,7 +48,7 @@ html,body{
 }
 
 .navbar-default{
-	padding-right: 10px;
+	padding-right: 30px;
 }
 
 .navbar-default .navbar-nav li a{
@@ -56,14 +61,14 @@ html,body{
 
 #home{
 	display: table;
-	height: 80vh;
+	height: 100vh;
 	position: relative;
 	width: 100%;
 }
 
 #particles-js{
 	display: table;
-	height: 90vh;
+	height: 100vh;
 	position: absolute;
 	width: 100%;
 }
@@ -119,21 +124,53 @@ html,body{
 	line-height: 35px;
 }
 
-.padding{
-	padding: 80px 0;
+.paddingTop,.paddingBottom,.padding{
+	padding: 50px 0;
 }
 
-.padding img{
+.paddingTop img, .paddingBottom img, .padding img{
 	width: 100%;
 	float: right;
 }
 
-.row h2{
-	color:#fa4729;
+.paddingTop,.padding {
+	background-color: #535353;
 }
 
-#fixed{
-	background: url(../img/background.jpg) no-repeat center center fixed;
+.paddingBottom{
+	background-color: #fa4729;
+}
+
+.paddingTop .row h2{
+	color:#fa4729;
+}
+.paddingBottom .row h2{
+	color:#000;
+}
+
+.row p{
+	color:#fff;
+}
+
+.row h2{
+	padding-top: 60px;
+}
+
+.row p{
+	padding-top: 20px;
+}
+
+#fixedTop{
+	background: url(../img/imgCollective.png) no-repeat center center fixed;
+	display: table;
+	height: 60%;
+	position: relative;
+	width: 100%;
+	background-size: cover;
+}
+
+#fixedBottom{
+	background: url(../img/imgEinstein.png) no-repeat center center fixed;
 	display: table;
 	height: 60%;
 	position: relative;
@@ -143,9 +180,10 @@ html,body{
 
 footer{
 	width: 100%;
-	background-color: #23415c;
+	background-color: #000;
 	padding: 5% 5% 10% 5%;
 	color:#fff;
+	max-height: 100px;
 }
 
 .fa{
@@ -163,9 +201,118 @@ footer{
 	max-width: 200px;
 }
 
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+    body::-webkit-scrollbar { width: 5px; /*height: 5px;*/ }
+	body::-webkit-scrollbar-thumb { background: #e17c4a; }
+	body::-webkit-scrollbar-track { background: transparent; }
+
+    .owh { overflow: hidden; }
+    .posRelative { position: relative; }
+    .to-left { float: left; }
+    .to-right { float: right; }
+    .to-center { margin: 0 auto; }
+    .text-center { text-align: center; }
+    .layout { width: 1200px; }
+
+    .btn { padding: 5px 16px; border-radius: 3px; font-size: 14px; outline: none; }
+    .btn { padding: 5px 16px; border-radius: 3px; font-size: 14px; outline: none; }
+    .btn-white {background-color: #fff; border: #fff 1px solid; color: #333; font-family: roboto; }
+    .btn-white:hover { cursor:pointer; background-color: #333; border: #333 1px solid; color: #fff; }
+    .btn-orange {background-color: #fa4729; border: #fa4729 1px solid; color: #fff; font-family: roboto; }
+    .btn-orange:hover { cursor: pointer; background-color: #333; border: #333 1px solid; color: #fff; }
+
+	.videa-nedir{width: 100%; background-color: #535353;}
+    #section-videa {height: 650px; padding-top: 150px; }
+    #section-videa div.content {float: left; width: 35%; padding-top: 30px; }
+    #section-videa div.content .row {margin-bottom: 40px; }
+    #section-videa div.content .row i { float: left; font-size: 32px; color: #fa4729; }
+    #section-videa div.content .row h1 { overflow: hidden; font-size: 26px; letter-spacing: -1px; font-weight: normal; font-family: roboto; padding: 0 0 0 10px; margin: 0; }
+    #section-videa div.content .row p { font-size: 18px; padding: 5px 0 0 40px; margin: 0; font-family: robotoLight; }
+    #section-videa div.video {float: right; width: 60%; position: relative; }
+    #section-videa div.video .imac { height: 529px; }
+    #section-videa div.video .imac img { width: 100%; }
+    #section-videa div.video .imac iframe { position: absolute; top: 29px; width: 648px; left: 35px; height: 365px;}
+
+    #section-faq { background-color: #fa4729; height: 350px; }
+    .section-icon { right: 0; top: -20px; position: absolute; }
+    #section-faq .content { position: absolute; width: 80%; left: 0; overflow: hidden; }
+    #section-faq h1 { font-weight: normal; font-size: 34px; letter-spacing: -1px; font-family: roboto; margin: 0; padding: 50px 0 15px 0; color: #242424; }
+    #section-faq h2 { font-weight: normal; font-size: 26px; letter-spacing: -0.5px; font-family: robotoLight; margin: 0; padding: 0; color: #fff; }
+    #section-faq p { font-size: 18px; color: #fff; font-family: robotoLight; padding: 20px 0; }
+
+    #section-footer { background-color: #2f3e47; padding: 50px 0; }
+    #section-footer h1 { font-family: robotoLight; color: #fff; font-weight: normal; font-size: 28px; text-align: center; margin: 0; padding: 0 0 20px 0; }
+    #section-footer .download-link-set { text-align: center; }
+    #section-footer .download-link-set img { border-radius: 5px; margin: 0 5px; }
+    #section-footer .footer-link-set { text-align: center; padding-top: 30px; }
+    #section-footer .footer-link-set a { text-decoration: none; color: #fff; font-size: 14px; padding: 6px 14px; border-radius: 4px; }
+    #section-footer .footer-link-set a:hover { background-color: #1f292f; }
+    #section-footer .copyright { text-align: center; padding-top: 20px; color: #e8e8e8; font-size: 13px; }
 
 
+	@media screen and (max-width:767px) and (min-width:280px) {
+        #section-videa { padding-top: 0; overflow: hidden; height: auto; }
+        #section-videa div.content { float: none; width: 100%; padding: 40px 25px; overflow: hidden; }
+        #section-videa div.content .row { width: 100%; float: none; text-align: left; padding: 0 10px; }
+        #section-videa div.content .row i {margin-bottom: 5px;}
+        #section-videa div.content .row h1 {color:#000; padding: 0 0 5px 10px; margin-left: 10px;}
+        #section-videa div.content .row p { padding:0; margin:0;}
+        #section-videa div.video { float: none; width: 100%; padding-bottom: 30px; }
+        #section-videa div.video .imac { height: auto; width: 290px; margin: 0 auto; position: relative; }
+        #section-videa div.video .imac iframe { left: 13px; top: 11px; width: 262px; height: 148px; }
+        #section-faq { padding-left: 20px; padding-right: 20px; height: 400px; }
+        #section-faq .content { width: 100%; }
+        #section-faq .section-icon { height: 120px; top: -25px; right: -20px; }
+        #section-faq h1 { padding: 30px 0 0px 0; }
+        #section-faq input[type="button"] { width: 100%; }
+        #section-faq div.content h1 {padding-top:30px}
+        #section-faq div.content h2 {padding-top:20px}
+        #section-faq div.content p { padding-top:20px;}
+        #section-footer .download-link-set img { margin: 5px 0; }
+        #section-footer .footer-link-set a { display:inline-block; background-color: transparent !important; }
+        #inner-top-bar #logo { display: none; }
+        #dialog-content {padding:20px 10px !important;}
+    }
 
+    /* TABLET DIKEY */
+	@media screen and (max-width:1080px) and (min-width:768px) {
+        #section-videa { padding-top: 0; overflow: hidden; height: auto; }
+        #section-videa div.content {float:none; width: 100%; padding: 40px 25px; overflow: hidden; }
+        #section-videa div.content .row {width: 35%; float: left; text-align: center; padding: 0 15px; }
+        #section-videa div.content .row i {float: none; display: block; margin-bottom: 5px;}
+        #section-videa div.content .row h1 {padding: 0 0 5px 0;}
+        #section-videa div.content .row p { padding: 0;}
+        #section-videa div.video { float: none; width: 100%; padding-bottom: 30px; }
+        #section-videa div.video .imac { height: auto; width: 290px; margin: 0 auto; position: relative; }
+        #section-videa div.video .imac iframe { left: 13px; top: 11px; width: 262px; height: 148px; }
+    	#section-faq { padding: 0 40px; }
+        #section-faq .content { width: 100%; }
+        #section-faq .section-icon { height: 150px; }
+    }
+
+
+  /* MOBILE COMMON */
+	@media screen and (max-width:1024px) {
+        .layout { width: 100%; }
+        #logo {margin-left: 10px;}
+        #top-bar ul { margin-right: 10px; }
+        #section-faq p { padding-top: 0; }
+    }
 
 
 /*--- iOS Landing Page Fix
