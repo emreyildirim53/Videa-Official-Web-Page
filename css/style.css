@@ -10,7 +10,7 @@
     font-family: Material Icons;
     src: url('../fonts/MaterialIcons-Regular.woff2');
 }
-@media (max-width: 768px){
+@media screen and (max-width:767px) and (min-width:280px) {
   	.landing-text h1{
    		font-size:300%;
   	}
@@ -23,9 +23,70 @@
   		max-width: 100px;
   	}
   	.navbar-brand{
-		padding-left: 10px;
-		margin-left: 25% !important;
+		position: absolute;
+		left: 50%;
+		margin-left: -90px !important;  /* 50% of your logo width */
+		display: block;
   	}
+  	.navbar .navbar-collapse {
+	  text-align: center;
+	}
+	.paddingTop,.paddingBottom,.padding{
+		padding: 10px 0 !important;
+	}
+	.paddingTop .row img{
+		margin: 20px 0;
+	}
+	.paddingTop .row h2 , p,.paddingBottom .row h2 , p{
+		text-align: left;
+	}
+	.navbar{		
+		position: relative;
+	}
+	#fixedTop{
+		 max-width: 100%;
+	    min-width: 300px;
+	    height: auto;
+	}
+
+	#fixedTop{	
+		background: url(../img/imgCollective_mobile.png) no-repeat center center fixed !important;
+		display: table !important;
+		height: 60% !important;
+		width: 100% !important;
+		z-index: -1 !important;
+		-webkit-background-size: cover !important;
+		-moz-background-size: cover !important;
+		-o-background-size: cover !important;
+		background-size: cover !important;
+		background-attachment: fixed !important;
+	}
+	#fixedTop:after{
+	    content:""!important;
+	    position:fixed!important; /* stretch a fixed position to the whole screen */
+	   
+	    height:100vh !important; /* fix for mobile browser address bar appearing disappearing */
+
+	    z-index:-1!important; /* needed to keep in the background */
+	    background: url(../img/imgCollective_mobile.png) center center!important;
+	    -webkit-background-size: cover!important;
+	    -moz-background-size: cover!important;
+	    -o-background-size: cover!important;
+	    background-size: cover!important;
+	}
+
+	#fixedBottom{
+		background: url(../img/imgEinstein_mobile.png) no-repeat center center fixed !important;
+		display: table !important;
+		height: 60% !important;
+		width: 100% !important;
+		z-index: -1 !important;
+		-webkit-background-size: cover !important;
+		-moz-background-size: cover !important;
+		-o-background-size: cover !important;
+		background-size: cover !important;
+		background-attachment: fixed !important;
+	}
 }
 
 html,body{
@@ -37,10 +98,11 @@ html,body{
 	padding: 0.2% 0;
 	font-size: 1.2em;
 	opacity: 0.96;
-}
+} 	
+
 .navbar-brand{
 	min-height: 55px;
-	padding:0 5px 5px 40px;
+	padding:2px 0 0 20px;
 }
 
 .navbar-brand img{
@@ -48,7 +110,7 @@ html,body{
 }
 
 .navbar-default{
-	padding-right: 30px;
+	padding-right: 0px;
 }
 
 .navbar-default .navbar-nav li a{
@@ -125,7 +187,7 @@ html,body{
 }
 
 .paddingTop,.paddingBottom,.padding{
-	padding: 50px 0;
+	padding: 40px 0;
 }
 
 .paddingTop img, .paddingBottom img, .padding img{
@@ -153,29 +215,37 @@ html,body{
 }
 
 .row h2{
-	padding-top: 60px;
+	padding-top: 0px;
 }
 
 .row p{
 	padding-top: 20px;
 }
 
-#fixedTop{
-	background: url(../img/imgCollective.png) no-repeat center center fixed;
+#fixedTop{	
 	display: table;
 	height: 60%;
-	position: relative;
 	width: 100%;
+	z-index: -1;
+	background: url(../img/imgCollective.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
+	background-attachment: fixed;
 }
 
 #fixedBottom{
-	background: url(../img/imgEinstein.png) no-repeat center center fixed;
 	display: table;
 	height: 60%;
-	position: relative;
 	width: 100%;
+	z-index: -1;
+	background: url(../img/imgEinstein.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
+	background-attachment: fixed;
 }
 
 footer{
@@ -236,13 +306,13 @@ footer{
     .btn-orange {background-color: #fa4729; border: #fa4729 1px solid; color: #fff; font-family: roboto; }
     .btn-orange:hover { cursor: pointer; background-color: #333; border: #333 1px solid; color: #fff; }
 
-	.videa-nedir{width: 100%; background-color: #535353;}
+	.videa-nedir{width: 100%; background-color: #fff;}
     #section-videa {height: 650px; padding-top: 150px; }
     #section-videa div.content {float: left; width: 35%; padding-top: 30px; }
     #section-videa div.content .row {margin-bottom: 40px; }
     #section-videa div.content .row i { float: left; font-size: 32px; color: #fa4729; }
     #section-videa div.content .row h1 { overflow: hidden; font-size: 26px; letter-spacing: -1px; font-weight: normal; font-family: roboto; padding: 0 0 0 10px; margin: 0; }
-    #section-videa div.content .row p { font-size: 18px; padding: 5px 0 0 40px; margin: 0; font-family: robotoLight; }
+    #section-videa div.content .row p { color:#000;font-size: 18px; padding: 5px 0 0 40px; margin: 0; font-family: robotoLight; }
     #section-videa div.video {float: right; width: 60%; position: relative; }
     #section-videa div.video .imac { height: 529px; }
     #section-videa div.video .imac img { width: 100%; }
@@ -268,16 +338,16 @@ footer{
 	@media screen and (max-width:767px) and (min-width:280px) {
         #section-videa { padding-top: 0; overflow: hidden; height: auto; }
         #section-videa div.content { float: none; width: 100%; padding: 40px 25px; overflow: hidden; }
-        #section-videa div.content .row { width: 100%; float: none; text-align: left; padding: 0 10px; }
-        #section-videa div.content .row i {margin-bottom: 5px;}
-        #section-videa div.content .row h1 {color:#000; padding: 0 0 5px 10px; margin-left: 10px;}
-        #section-videa div.content .row p { padding:0; margin:0;}
+        #section-videa div.content .row { width: 100%; float: none; text-align: center; padding: 0 10px; }
+        #section-videa div.content .row i {margin-bottom: 5px; float:none;}
+        #section-videa div.content .row h1 {color:#000; padding: 0 0 5px 10px; margin-left: 0px;}
+        #section-videa div.content .row p { padding:0; margin:0; text-align: center;}
         #section-videa div.video { float: none; width: 100%; padding-bottom: 30px; }
         #section-videa div.video .imac { height: auto; width: 290px; margin: 0 auto; position: relative; }
         #section-videa div.video .imac iframe { left: 13px; top: 11px; width: 262px; height: 148px; }
         #section-faq { padding-left: 20px; padding-right: 20px; height: 400px; }
         #section-faq .content { width: 100%; }
-        #section-faq .section-icon { height: 120px; top: -25px; right: -20px; }
+        #section-faq .section-icon { height: 80px; top: -10px; right: -20px; }
         #section-faq h1 { padding: 30px 0 0px 0; }
         #section-faq input[type="button"] { width: 100%; }
         #section-faq div.content h1 {padding-top:30px}
@@ -351,7 +421,7 @@ section {
 	text-align: center;
 	vertical-align: middle;
 }
---*/
+
 
 /*--- iOS Fixed Image Fix
 figure {
