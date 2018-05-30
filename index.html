@@ -11,6 +11,11 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="css/style.css" rel="stylesheet" />
+	<link href="js/cb/colorbox.css" rel="stylesheet" type="text/css" />	
+    <link type="text/css" rel="stylesheet" href="css/material.css">
+    <link type="text/css" rel="stylesheet" href="css/font-style.css">
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/cb/colorbox.js"></script>
 </head>
 
 <body>
@@ -46,8 +51,8 @@
     <div class="landing-text">
       <h1>TAZE FİKİRLER</h1>
       <h3>Hizmet, ürün ve projelerinizi geliştirirken <br> toplumun kollektif zeka ve fikirlerinden yararlanın.</h3>
-      <a href="#" class="btn btn-default btn-lg" id="letsgo"> Hemen başla</a>
-      <a href="#" class="btn btn-default btn-lg" id="login"> Giriş Yap</a>
+      <a href="#" class="btn btn-default btn-lg" id="letsgo"> HEMEN BAŞLA</a>
+      <a href="#" class="btn btn-default btn-lg" id="login"> GİRİŞ YAP</a>
     </div>
   </div>
 
@@ -124,94 +129,141 @@
 
 <div id="fixedBottom"></div>
 
-<!--
+
 <div class="padding">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-        <h4>Built with Sass</h4>
-        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-      </div>
-      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-          <img src="img/sass.png" class="img-responsive">     
-      </div>
-      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-        <h4>And Less</h4>
-        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-      </div>
-      <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-          <img src="img/less.png" class="img-responsive">     
-      </div>
-    </div>
-  </div>
+	<div class="container">
+		<div class="panel-group">
+		    <div class="panel">
+		      <div class="panel-heading"><h2>Kimlere Uygun?</h2></div>
+		      <div class="panel-body">
+		      	<span class="glyphicon glyphicon-send"></span>
+		     	&nbspGeniş bir kitleden, kısa sürede çok fikir toplamak isteyen,
+		     	<br><span class="glyphicon glyphicon-phone"></span>
+		     	&nbspKitlesi, mobil uygulama üzerinden fikir verebilecek,
+		     	<br><span class="glyphicon glyphicon-comment"></span>
+		     	&nbspAçık uçlu soruyla zengin içerikli fikir ve içgörü toplamak isteyen,
+		     	<br><span class="glyphicon glyphicon-flash"></span>
+		     	&nbspBirbirini takip eden projeler ve oyun/puan kurgusuyla kitlesiyle daha dinamik, keyifli bir iletişim isteyen, 
+		     	<br><span class="glyphicon glyphicon-cog"></span>
+		     	&nbspAnketlerden daha dinamik, sosyal medyadan daha kontrollü bir
+				iletişim aracı arayan,
+				<p>Tüm kurum ve kuruluşların (firma, STK: dernek, vakıf, oda, belediye, sendika, eğitim kurumu…) Videa’dan faydalanabileceğine inanıyoruz</p>
+				<div class="letsgobar">
+					<a href="#" class="btn btn-default btn-lg" id="letsgo"> HEMEN BAŞLA</a>
+				</div>		
+		     </div>
+		    </div>
+		</div>
+	</div>
 </div>
+
   
--->
-  <div class="videa-nedir">
-    <!-- VIDEA NEDIR -->
-    <div id="section-videa">
-        <div class="layout to-center">
-            <div class="content">
-                <div class="row">
-                    <i class="material-icons">&#xE244;</i>
-                    <h1>Fikir Ver</h1>
-                    <p>Katılmak oldukça kolay. Projeyi inceleyip kısa fikrini gönder</p>
-                </div>  
-                <div class="row">
-                    <i class="material-icons">&#xE80D;</i>
-                    <h1>Paylaş</h1>
-                    <p>Ekibini oluşturarak fikir verme hakkını ve kazanımlarını arttırabilir, daha çok eğlenebilirsin</p>
-                </div>
-                <div class="row">
-                    <i class="material-icons">&#xE8DC;</i>
-                    <h1>Kazan</h1>
-                    <p>Yaratıcılık ve yeteneğini geliştirip bunu fırsatlara dönüştürebilirsin</p>
-                </div>
-               
-            </div>
+<div class="videa-nedir">
+	<!-- VIDEA NEDIR -->
+	<div id="section-videa">
+	    <div class="layout to-center">
+	        <div class="content">
+	            <div class="row">
+	                <i class="material-icons">&#xE244;</i>
+	                <h1>Fikir Ver</h1>
+	                <p>Katılmak oldukça kolay. Projeyi inceleyip kısa fikrini gönder</p>
+	            </div>  
+	            <div class="row">
+	                <i class="material-icons">&#xE80D;</i>
+	                <h1>Paylaş</h1>
+	                <p>Ekibini oluşturarak fikir verme hakkını ve kazanımlarını arttırabilir, daha çok eğlenebilirsin</p>
+	            </div>
+	            <div class="row">
+	                <i class="material-icons">&#xE8DC;</i>
+	                <h1>Kazan</h1>
+	                <p>Yaratıcılık ve yeteneğini geliştirip bunu fırsatlara dönüştürebilirsin</p>
+	            </div>	           
+	        </div>
+	        <div class="video">
+	            <div class="imac">
+	                <img src="img/imac-mockup.png" />
+	                <iframe src="https://www.youtube.com/embed/wcUY8Tgc6_4?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0"></iframe>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+</div>
 
-            <div class="video">
-                <div class="imac">
-                    <img src="img/imac-mockup.png" />
-                    <iframe src="https://www.youtube.com/embed/wcUY8Tgc6_4?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0"></iframe>
-                </div>
-            </div>
+<!-- MERAK ETTİKLERİNİZ -->
+<div id="section-faq">
+    <div class="layout to-center posRelative">
+        <div class="content">
+            <h1>Merak Ettikleriniz?</h1>
+            <h2>Nasıl bir fikir?</h2>
+            <p> Projede istenen konuyla ilgili düşünceni en iyi anlatan ve okuyana ilham veren kısa bir yazı. En fazla 400 karakterlik (yaklaşık 50 kelime).
+              Yazarken mümkün olabildiğince düzgün bir Türkçe kullanmanı ve kısaltmalardan kaçınmanı rica ediyoruz.</p>
+            <a href="sss.html" class="iframe btn btn-white">Daha Fazla</a>
+        </div>
+        <img src="img/question-mark.png" class="section-icon" />
+    </div>
+</div>
+<!-- FOOTER -->
+<div id="section-footer">
+    <div class="layout to-center">   
+    	<h6 style="text-align:center;color:#fff; margin-bottom:10px;">Videa Mobil Uygulamaları</h6> 
+        <div class="download-link-set">
+            <a href="https://itunes.apple.com/tr/app/videadom/id1144882673?mt=8" target="_blank"><img src="img/apple-store.png" border="0" /></a>
+            <a href="https://play.google.com/store/apps/details?id=com.videadom&hl=tr" target="_blank"><img src="img/google-play.png" border="0" /></a>
+        </div>
+        <div class="footer-link-set">
+            <a href="hakkimizda.html" class="iframe">Videa Hakkında</a>
+            <a href="https://www.google.com.tr/" class="iframe">Merak Ettikleriniz</a>
+            <a href="kurallar.html" class="iframe">Gizlilik ve Güvenlik</a>
+            <a href="mailto:bilgi@videadom.com">İletişim</a>
+        </div> 
+        <div class="copyright">
+            &copy;2017 Videa Bilişim Hizmetleri Anonim Şirketi
         </div>
     </div>
-  </div>
+</div>
 
-    <!-- MERAK ETTİKLERİNİZ -->
-    <div id="section-faq">
-        <div class="layout to-center posRelative">
-            <div class="content">
-                <h1>Merak Ettikleriniz?</h1>
-                <h2>Nasıl bir fikir?</h2>
-                <p> Projede istenen konuyla ilgili düşünceni en iyi anlatan ve okuyana ilham veren kısa bir yazı. En fazla 400 karakterlik (yaklaşık 50 kelime).
-                  Yazarken mümkün olabildiğince düzgün bir Türkçe kullanmanı ve kısaltmalardan kaçınmanı rica ediyoruz.</p>
-                <a href="sss.html" class="iframe btn btn-white">Daha Fazla</a>
-            </div>
-            <img src="img/question-mark.png" class="section-icon" />
-        </div>
-    </div>
-    <!-- FOOTER -->
-    <div id="section-footer">
-        <div class="layout to-center">
-            <div class="download-link-set">
-                <a href="https://itunes.apple.com/tr/app/videadom/id1144882673?mt=8" target="_blank"><img src="img/apple-store.png" border="0" /></a>
-                <a href="https://play.google.com/store/apps/details?id=com.videadom&hl=tr" target="_blank"><img src="img/google-play.png" border="0" /></a>
-            </div>
-            <div class="footer-link-set">
-                <a href="javascript:scrollContent('section-videa', 500, 50)">Videa Nedir?</a>
-                <a href="sss.html" class="iframe">Merak Ettikleriniz</a>
-                <a href="kurallar.html" class="iframe">Gizlilik ve Güvenlik</a>
-               
-                <a href="mailto:bilgi@videadom.com">İletişim</a>
-            </div>
-            <div class="copyright">
-                &copy;2017 Videa Bilişim Hizmetleri Anonim Şirketi
-            </div>
-        </div>
-    </div>
+
+
+ <script>
+
+    var popupHeight = 0;
+
+    $(document).ready(function() {
+        //$('.rb').rightBox( { width: 950, height: 600 });
+		$(".iframe").colorbox({iframe:true, width:"95%", height:"80%", maxWidth: 950, maxHeight: 600 });
+        var scroll = $(window).scrollTop();
+        if(scroll > 150) {
+            $("#top-bar").addClass("filled-top-bar");
+        }
+        setPopupHeight();
+    });
+
+    $(window).resize(function() {
+        setPopupHeight();
+    });
+
+    $(window).scroll(function (event) {
+        var scroll = $(window).scrollTop();
+        if(scroll > 150) {
+            $("#top-bar").addClass("filled-top-bar");
+        } else {
+            $("#top-bar").removeClass("filled-top-bar");
+        }
+    });
+    
+    function scrollContent(e, s, diff) {
+        $('#' + e).ScrollTo({
+            duration: s,
+            durationMode: 'all',
+            diff: diff
+        });
+    }
+
+    function setPopupHeight() {
+        var h = $(window).height();
+        popupHeight = h - 50;
+    }
+</script>
 
 
 
@@ -222,7 +274,7 @@
 		<h1>BOOTSTRAP</h1>
 		<h3>Learn the basic building blocks.</h3>
 		<a href="#" class="btn btn-default btn-lg">Get Started</a>
-	</div>
+	</div>c
 	<div class="home-wrap">
         <div id="home">
 		</div>
@@ -230,14 +282,8 @@
 </section>
 -->
 
-
-
-
-  
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="js/particles.min.js"></script>
-  <script src="js/app.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="js/particles.min.js"></script>
+	<script src="js/app.js"></script>
 </body>
 </html>
